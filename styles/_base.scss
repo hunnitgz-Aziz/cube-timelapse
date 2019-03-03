@@ -1,0 +1,31 @@
+body {
+	background: url('/images/bg.gif') no-repeat center center/cover;
+	background-color: aqua;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+body, html {
+	height: 100%;
+}
+
+.box-3d {
+	will-change: transform;
+	width: 100%;
+}
+
+.wrapper {
+	perspective: 2100px;
+	height: 360px;
+	width: 480px;
+	margin: 0 auto;
+}
+
+video {
+	object-fit: cover;
+	height: 360px;
+	width: 480px;
+}

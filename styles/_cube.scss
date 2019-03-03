@@ -1,0 +1,53 @@
+.box {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: spinaround 8s infinite linear;
+
+  > div {
+  	position: absolute;
+    width: 480px;
+    height: 480px;
+    overflow: hidden;
+  }
+
+  .front {
+  	transform: translateZ(235px) rotateY(180deg);
+  }
+
+  .back {
+  	transform: translateZ(-244px) rotateY(180deg);
+  }
+
+  .left, .right {
+  	transform: translateZ(-5px) rotateY(90deg) rotateX(0deg);
+  }
+
+  .left {
+  	left: -240px;
+  }
+
+  .right {
+  	right: -240px;
+  }
+
+  .top, .bottom {
+  	transform: translateZ(-2px) rotateX(90deg);
+  }
+
+  .top {
+  	top: -240px;
+  	display: none;
+  }
+
+  .bottom {
+  	bottom: -240px;
+  	display: none;
+  }
+}
+
+@keyframes spinaround {
+    to {
+        transform: rotateY(1turn)
+    }
+}
